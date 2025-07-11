@@ -1,0 +1,14 @@
+Assistant checkpoint: Update fetch URL to localhost:3000
+
+Assistant generated file changes:
+- index.html: Update fetch URL to localhost:3000
+
+---
+
+User prompt:
+
+replace:const res = await fetch('https://feed-back-end.feedappdev.repl.co/signup', {
+with this:const res = await fetch('http://localhost:3000/signup', {
+
+Replit-Commit-Author: Assistant
+Replit-Commit-Session-Id: 4ac8fa2e-5d38-4466-9e7a-f4db82288553

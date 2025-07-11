@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 f149b5a6fa46270d8fec49218ed1753ad9f1158d Feed Development <42229817-feedappdev@users.noreply.replit.com> 1750691706 +0000	commit (initial): Initial commit
+f149b5a6fa46270d8fec49218ed1753ad9f1158d 46590e7eb35cf4ed2c6c291852b79a0673709364 feedappdev <42229817-feedappdev@users.noreply.replit.com> 1750693561 +0000	commit: Checkpoint before assistant change: Create account registration functionality and set up the web server
+46590e7eb35cf4ed2c6c291852b79a0673709364 b4240d18f18c934741d98f1b94e95a372351f866 Feed Development <42229817-feedappdev@users.noreply.replit.com> 1750693591 +0000	commit: Assistant checkpoint: Fix syntax errors and configure run button
+b4240d18f18c934741d98f1b94e95a372351f866 9334238f32f63980ccbe5d5bbbf30f230302fff6 Feed Development <42229817-feedappdev@users.noreply.replit.com> 1750694365 +0000	commit: Assistant checkpoint: Fix CORS and server binding for frontend connectivity

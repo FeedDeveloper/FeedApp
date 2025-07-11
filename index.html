@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>F.E.E.D. - Food Equity & Emergency Distribution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-ivory text-cape">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-ivory border-bottom border-silver">
+    <div class="container">
+      <a class="navbar-brand text-cape fw-bold" href="#">F.E.E.D.</a>
+      <div>
+        <a class="btn btn-orange me-2" href="#find-food">Find Food</a>
+        <a class="btn btn-willow me-2" href="#donate">Donate</a>
+        <a class="btn btn-outline-orange me-2" href="#volunteer">Volunteer</a>
+        <button type="button" class="btn btn-cape me-2" data-bs-toggle="modal" data-bs-target="#signInModal">Sign-In</button>
+        <a class="btn btn-salomie me-2" href="#resources">Resources</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="text-center py-5 bg-salomie">
+    <h1 class="display-4 text-cape fw-bold">F.E.E.D.</h1>
+    <p class="lead text-cape">Food Equity & Emergency Distribution</p>
+  </header>
+
+  <!-- MISSION -->
+  <section class="container text-center my-5">
+    <h2 class="text-cape">Our Mission</h2>
+    <p class="lead text-dark">
+      F.E.E.D. helps people find food, donate to shelters, resources, and volunteer all in one place.
+    </p>
+  </section>
+
+  <!-- FIND FOOD -->
+  <section id="find-food" class="container text-center my-5">
+    <div class="mb-4">
+
+
+    <h2 class="text-cape mb-4">Find Food Near You</h2>
+    <p class="text-dark mb-5">Use our directory to find food banks and resources near you.</p>
+    <input type="text" id="foodBankSearch" class="form-control w-50 mx-auto" placeholder="Search by name or address...">
+    </div>
+    <div class="row justify-content-center mb-4">
+      <!--Vegan -->
+      <div class="col-md-8 d-flex flex-wrap gap-3">
+        <input class="form-check-input" type="checkbox" id="veganFilter"> 
+        <label class="form-check-label" for="veganFilter">Vegan Options</label> 
+      <!-- Halal -->
+        <div class="col-md-8 d-flex flex-wrap gap-3">
+          <input class="form-check-input" type="checkbox" id="halalFilter"> 
+          <label class="form-check-label" for="halalFilter">Halal Options</label>
+      </div> 
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="openNowFilter"> 
+      <label class="form-check-label" for="openNowFilter">Open Now</label> 
+      </div> 
+      </div> 
+    </div>
+    <!-- Use of One's Location --> 
+    <div class="text-center my-3">
+      <button class="btn btn-outline-orange" id="useLocationbutton">Use My Location</button>
+    </div>
+    <div class="mb-5">
+      <div id="map-container" class="rounded border border-silver" style="height: 400px; background-color: #e0e0e0;">
+        <p class="text-center pt-5 text-muted">Interactive Map coming soon</p>
+      </div>
+    </div>
+
+    <div id="foodBankList" class="row justify-content-center">
+      <!-- Food Bank A -->
+      <div class="col-md-4 mb-4 food-bank">
+        <div class="card border-silver">
+          <div class="card-body">
+            <h5 class="card-title text-cape">Food Bank A</h5>
+            <p class="card-text text-dark">Address: 123 AnyStreet, USA</p>
+            <a href="#" class="btn btn-outline-orange">View Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Food Bank B -->
+      <div class="col-md-4 mb-4 food-bank">
+        <div class="card border-silver">
+          <div class="card-body">
+            <h5 class="card-title text-cape">Food Bank B</h5>
+            <p class="card-text text-dark">Address: 456 AnyStreet, USA</p>
+            <a href="#" class="btn btn-outline-orange">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- DONATE -->
+  <section id="donate" class="container text-center my-5">
+    <h2 class="text-cape mb-4">Donate Food or Money</h2>
+    <p class="text-dark mb-5">Support local shelters with food or monetary donations.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="card border-silver">
+          <div class="card-body">
+            <h5 class="card-title text-cape">Food Donation</h5>
+            <p class="card-text text-dark">Donate non-perishable food items to local shelters.</p>
+            <a href="#" class="btn btn-outline-orange">Donate Food</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card border-silver">
+          <div class="card-body">
+            <h5 class="card-title text-cape">Monetary Donation</h5>
+            <p class="card-text text-dark">Make a financial contribution to support our efforts.</p>
+            <a href="#" class="btn btn-outline-orange">Donate Money</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER -->
+  <section id="volunteer" class="container text-center my-5">
+    <h2 class="text-cape mb-4">Volunteer Opportunities</h2>
+    <p class="card-text text-dark">Volunteer with food-related organizations and make a difference!</p>
+    <a class="btn btn-outline-willow mt-4" href="#">+ Post an Opportunity</a>
+    <small class="text-muted">Sign in to post or join an event.</small>
+
+    <!-- Opportunities -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 col-md-10">
+        <div class="card border-silver mb-3">
+          <div class="card-body">
+            <h5 class="card-title text-cape">Hank's Soup Kitchen</h5>
+            <p class="card-text text-dark">Sunday, 10 am–3 pm, volunteers needed.</p>
+            <a href="#" class="btn btn-outline-orange">More Info</a>
+          </div>
+        </div>
+        <div class="card border-silver">
+          <div class="card-body">
+            <h5 class="card-title text-cape">Cans of Caring</h5>
+            <p class="card-text text-dark">Tuesday, 12–3 pm, 45 volunteers needed.</p>
+            <a href="#" class="btn btn-outline-orange">More Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES -->
+  <section id="resources" class="bg-willow py-5">
+    <div class="container text-center">
+      <h2 class="text-cape mb-4">RESOURCES</h2>
+      <p class="text-cape mb-4">All your food-related resources are here.</p>
+      <a href="#" class="btn btn-cape">Resources</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="bg-salomie py-5">
+    <div class="container text-center">
+      <h2 class="text-cape mb-4">ABOUT F.E.E.D.</h2>
+      <p class="text-cape mb-5">Enter text here (will think of later).</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-cape text-light text-center py-3">
+    <small>&copy; 2025 F.E.E.D. Built for the People by the People. All rights reserved.</small>
+  </footer>
+
+  <!-- Sign In Modal -->
+  <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signInModalLabel">Welcome</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3 text-start">
+              <label for="emailInput" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="emailInput" placeholder="youremail@example.com">
+            </div>
+            <div class="mb-3 text-start">
+              <label for="passwordInput" class="form-label">Password</label>
+              <input type="password" class="form-control" id="passwordInput" placeholder="Enter Password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer d-flex flex-column">
+          <button type="button" class="btn btn-orange w-100 mb-2">Sign In</button>
+          <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Cancel</button>
+          <p class="mt-3 mb-0 text-center">
+            <small class="text-muted">Don't have an account?
+              <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign up here</a>
+            </small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signUpModalLabel">Create an Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="signupForm">
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Name</label>
+              <input type="text" class="form-control" id="nameInput" required>
+            </div>
+            <div class="mb-3">
+              <label for="signUpEmailInput" class="form-label">Email</label>
+              <input type="email" class="form-control" id="signUpEmailInput" required>
+            </div>
+            <div class="mb-3">
+              <label for="signUpPasswordInput" class="form-label">Password</label>
+              <input type="password" class="form-control" id="signUpPasswordInput" required>
+            </div>
+            <div class="mb-3">
+              <label for="confirmPasswordInput" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmPasswordInput" required>
+            </div>
+            <button type="submit" class="btn btn-orange w-100" id="signUpBtn">
+              Sign Up
+              <span id="signUpSpinner" class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Signup Script -->
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('nameInput').value;
+      const email = document.getElementById('signUpEmailInput').value;
+      const password = document.getElementById('signUpPasswordInput').value;
+      const confirm = document.getElementById('confirmPasswordInput').value;
+      const signUpBtn = document.getElementById('signUpBtn');
+      const spinner = document.getElementById('signUpSpinner');
+
+      if (password !== confirm) {
+        alert("Passwords don't match.");
+        return;
+      }
+
+      signUpBtn.disabled = true;
+      spinner.classList.remove('d-none');
+
+      try {
+        const res = await fetch('http://localhost:3000/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, password })
+        });
+
+        const data = await res.json();
+        alert(data.message);
+      } catch (err) {
+        alert("Signup failed.");
+        console.error(err);
+      } finally {
+        signUpBtn.disabled = false;
+        spinner.classList.add('d-none');
+      }
+    });
+  </script>
+  <script>
+    const searchInput = document.getElementById('foodBankSearch');
+    const foodBanks = document.querySelectorAll('.food-bank');
+
+    searchInput.addEventListener('input', function () {
+      const query = this.value.toLowerCase();
+      foodBanks.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(query) ? '' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
